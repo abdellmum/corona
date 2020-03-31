@@ -7,44 +7,27 @@ body{
     background-color:$color-blue;
     font: Roboto, sans-serif;
     margin: 0;
-
 }
-.navbar{
-    width: auto;
+#navbar-logo{
+height: 50px;
+width: 50px;
+vertical-align: middle;
+}
+.news{
+    width:100%;
     height: 10rem;
-    background-color:$color-blue;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-    
-    &__menu{
-        color: blue;
-        display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-    align-items: stretch;
-    
-    align-content: stretch;
-    &__element{
-        border: solid 2px green;
-        border-radius: 30%;
-        width: 5rem;
-        height:2rem;
-    }
+    padding:2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    background-color: $color-yellow;
+    & h2{
+color: $color-blue;
+font-size: 2rem;
+font-weight: 500;
 
     }
-    &__flag-icon-background{
-        display: flex;
-        justify-items: flex-end;
-        width: 26px;
-height: 26px;
-border-radius: 50%;
-background-size: 35px;
-background-position: center center;
+    & p{
+        font-size: 1rem;
+font-weight: 300;
     }
-
 }
