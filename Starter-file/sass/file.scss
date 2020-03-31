@@ -1,5 +1,66 @@
+@import "variables";
+
+
 body{
     width: 100%;
     height: 100rem;
-    background-color: red;
+    background-color:$color-yellow;
+    font: Roboto, sans-serif;
+    margin: 0;
+
+}
+.navbar{
+    width: auto;
+    height: 10rem;
+    background-color:$color-blue;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    
+    &__menu{
+        color: blue;
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+    align-items: stretch;
+    
+    align-content: stretch;
+    &__element{
+        border: solid 2px green;
+        border-radius: 30%;
+        width: 5rem;
+        height:2rem;
+    }
+
+    }
+    &__button{
+        margin-left: 15rem;
+        width: 10rem;
+        height: 2rem;
+         border: 0;
+    line-height: 2.5;
+
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 20px;
+    background-color: rgb(112, 103, 241);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+        display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+    align-items: stretch;
+    align-content: stretch;
+    }
+
 }
