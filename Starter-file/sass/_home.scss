@@ -147,7 +147,7 @@ padding-top: 3rem;
     text-align: center;
     background-color: $color-blue;
     & h2{
-        padding:4rem;
+        padding:2rem;
         color: $color-ciel;
         margin: 2rem;
         font-weight: bolder;
@@ -161,7 +161,7 @@ padding-top: 3rem;
         justify-content: stretch;
         margin: 0 auto;
         &__text{
-            width: 50%;
+            width: 70%;
             height: auto;
             text-align: left;
             & h4{
@@ -178,13 +178,34 @@ padding-top: 3rem;
             
         }
         &__appel{
-              width: 50%;
+              width: auto;
             height: auto;
             text-align: right;
             display: flex;
             flex-direction: column;
-            justify-content: end;
             justify-content: space-around;
+            &__button{
+                background-color: $color-yellow;
+           width: 15rem;
+           height: 5rem;
+            border: solid 1px;
+            border-radius: 10px;
+            color: $color-blue;
+             font-size: 2rem;
+              font-weight: 600;
+              
+            }
+            & h3{
+                 text-align: center;
+                color: $color-yellow;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            & p{
+                  text-decoration: underline  $color-yellow;
+                  color:$color-font-white;
+                  font-size: 1.8rem;
+            }
             
 
         }
