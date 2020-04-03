@@ -1,9 +1,8 @@
 @import "variables";
-
-
+@import "mixins";
 body{
     width: 100%;
-    height: 100rem;
+    height: auto;
     font: Roboto, sans-serif;
     margin: 0;
 }
@@ -25,13 +24,13 @@ body{
 
 }
 #navbar-logo{
-height: 50px;
-width: 50px;
+height: 3rem;
+width: 3rem;
 vertical-align: middle;
 }
 .news{
     width:100%;
-    height: 10rem;
+    height: auto;
     padding:2rem;
     margin-bottom: 4rem;
     text-align: center;
@@ -51,7 +50,7 @@ font-weight: 500;
 }
 .hero{
     width: 100%;
-    height: 30rem;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -73,34 +72,72 @@ font-weight: 500;
             font-weight: 600;
         }
         &__paragh{
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 600;
         text-align: center;
         color:$color-font;
         }
         &__button{
-            background:url(/dist/Mergedbar.png);
-            background-size: cover;
-            background-repeat: no-repeat;
-
-
-  width: 80%;
-  height: 4rem;
-  border: solid 1px;
-  border-radius: 10px;
-   color: $color-blue;
-  font-size: 2rem;
-  font-weight: 600;
+           @include btn__test;
         }
 
     }
     &__img{
           width: 50%;
-        height: 100%;
+        height: auto;
         background-image: url(/dist/Assets/png/Group_80.png);
         background-size: cover;
         background-repeat: no-repeat;
 
+    }
+}
+
+
+
+.effects {
+    width: 100%;
+    height:auto;
+    padding-top: 5rem;
+display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: repeat(12, 1fr);
+justify-content: space-around;
+text-align: center;
+
+
+&__tittle{ grid-area: 1 / 1 / 3 / 13;
+    color:$color-blue;
+            font-size: 2rem;
+            padding-left: 4rem;
+            font-weight: 600;
+            text-align: center; }
+&__effect1 { grid-area: 3 / 1 / 8 / 7;
+    padding-top: 3rem;
+
+}
+&__effect2 { grid-area: 3 / 7 / 8 / 13;
+padding-top: 3rem;
+ }
+&__effect3 { grid-area: 8 / 1 / 13 / 7; 
+padding-top: 3rem;
+}
+&__effect4 { grid-area: 8 / 7 / 13 / 13;
+padding-top: 3rem;
+ }
+
+
+
+}
+
+.button{
+    width:100%;
+    height: auto;
+    padding:2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    background-color: $color-yellow;
+    &__test{
+        @include btn__test;
     }
 }
 
