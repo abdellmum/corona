@@ -141,6 +141,39 @@ padding-top: 3rem;
     }
 }
 
+.recomendation{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    & .recom{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        margin: 0 auto;
+        &__text{
+            width: 50%;
+            height: auto;
+            text-align: left;
+            
+        }
+        &__appel{
+              width: 50%;
+            height: auto;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            justify-content: space-around;
+            
+
+        }
+    }
+
+
+}
+
 
 
 
