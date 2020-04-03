@@ -132,3 +132,27 @@ body {
     color: #1078AD;
     font-size: 2rem;
     font-weight: 600; }
+
+.recomendation {
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .recomendation .recom {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    margin: 0 auto; }
+    .recomendation .recom__text {
+      width: 50%;
+      height: auto;
+      text-align: left; }
+    .recomendation .recom__appel {
+      width: 50%;
+      height: auto;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      justify-content: space-around; }
