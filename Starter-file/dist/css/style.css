@@ -205,3 +205,37 @@ body {
       align-items: center;
       text-align: center;
       justify-content: space-between; }
+
+.footer {
+  width: 100%;
+  height: 30rem; }
+  .footer__logo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 2rem;
+    margin: 0;
+    padding: 0; }
+  .footer__contact {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row; }
+    .footer__contact__util {
+      width: 30%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .footer__contact__nav {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around; }
+    .footer__contact__paragh {
+      width: 50%;
+      height: 100%;
+      text-align: center; }
