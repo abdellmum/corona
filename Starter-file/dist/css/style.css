@@ -41,7 +41,8 @@ body {
     color: #7F7F7F; }
 
 .hero {
-  width: 100%;
+  direction: rtl;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: row;
