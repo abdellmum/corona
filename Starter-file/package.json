@@ -4,20 +4,17 @@
   "main": "index.js",
   "scripts": {
   
-    "watch:prod": "node-sass sass/main.scss dist/css/style.css -w",
-    "server:prod": "live-server --port=8181 --browser=chrome",
-    "compress:css": "node-sass dist/css/style.comp.css dist/css/style.css --output-style compressed",
-    "fin-production": "===========================================",
-    "Mode-dev": "==============Branch dev==============",
-    "watch-dev": "node-sass sass/main.scss dist/css/style.prefix.css -w",
-    "start:dev": "concurrently  \"npm run server:prod\" \"npm run watch-dev\"",
-    "compiler:sass": "node-sass sass/main.scss dist/css/style.css",
-    "compiler:comp": "node-sass sass/main.scss dist/css/style.comp.css",
-    "concat:css": "concat -o dist/css/style.concat.css dist/css/all.css dist/css/style.comp.css",
-    "prefix:css": "postcss dist/css/style.concat.css --use autoprefixer -o dist/css/style.prefix.css",
-    "start": "npm-run-all compiler:comp compiler:sass concat:css prefix:css",
-    "start:watch": "npm-run-all compiler:comp compiler:sass concat:css prefix:css server:prod",
+    "watch": "node-sass sass/main.scss dist/css/style.css -w",
+    "server": "live-server --port=8181 --browser=chrome", 
+    "start": "concurrently  \"npm run server\" \"npm run watch\"",
+
+    "compiler": "node-sass sass/main.scss dist/css/style.css",
+    "prefix": "postcss dist/css/style.css --use autoprefixer -o dist/css/style.prefix.css",
+    "compress": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build": "npm-run-all compiler prefix compress",
+   
     "fin-dev": "==============Branch dev==============",
+
     "deploying": "==============Branch Prod==============",
     "watch-deploy": "node-sass sass/main.scss dist/css/style.css -w",
     "start:deploy": "concurrently  \"npm run server:prod\" \"npm run watch-deploy\"",
@@ -26,6 +23,7 @@
     "Hebergement": "=====================================",
     "deploy": "gh-pages -d dist",
     "fin-Hebergement": "/=====================================/"
+
   },
   "author": "shdd",
   "license": "ISC",
