@@ -4,37 +4,21 @@ body {
   font: Roboto, sans-serif;
   margin: 0; }
 
-.navbar-light .navbar-nav .active > .nav-link {
-  color: #1078AD;
-  font-weight: 900;
-  font: 2em sans-serif; }
-
-.navbar {
-  background-image: url(/dist/Mergedbar.png);
-  direction: rtl;
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .navbar nav-link {
-    color: #1078AD;
-    font-size: 10rem; }
-
-#navbar-logo {
-  height: 3rem;
-  width: 3rem;
-  vertical-align: middle; }
-
 .news {
   width: 100%;
-  height: auto;
-  padding: 2rem;
-  margin-bottom: 4rem;
+  height: 8rem;
   text-align: center;
+  margin: 0 auto !important;
   background-color: #F4CF1B; }
   .news h2 {
     color: #1078AD;
     font-size: 2rem;
     font-weight: 500; }
   .news__paragh {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    line-height: 1em;
     font-weight: 500;
     text-align: center;
     font-size: 1rem;
@@ -71,8 +55,8 @@ body {
     .hero__text__button {
       background-color: #1078AD;
       width: 30rem;
-      height: 3rem;
-      border: solid 1px;
+      height: 4rem;
+      border: solid 0px;
       border-radius: 10px;
       color: #fff;
       font-size: 2rem;
@@ -123,8 +107,8 @@ body {
   .button__test {
     background-color: #1078AD;
     width: 30rem;
-    height: 3rem;
-    border: solid 1px;
+    height: 4rem;
+    border: solid 0px;
     border-radius: 10px;
     color: #fff;
     font-size: 2rem;
@@ -217,17 +201,38 @@ body {
     justify-items: center;
     padding: 2rem; }
   .footer__contact {
-    width: 100%;
+    width: 90%;
     height: 80%;
+    margin: 0 auto;
     display: flex;
     flex-direction: row; }
+    .footer__contact__nav .vertical-menu {
+      width: 100%; }
+    .footer__contact__nav .vertical-menu a {
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: black;
+      display: block;
+      padding: 12px;
+      text-decoration: none; }
+    .footer__contact__nav .vertical-menu a.active {
+      color: #1078AD; }
     .footer__contact__util {
       width: 30%;
       height: 100%;
       text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-around; }
+      .footer__contact__util h2 {
+        color: #1078AD;
+        font-size: 2rem;
+        font-weight: 700; }
+      .footer__contact__util-paragh {
+        font-weight: 700; }
+      .footer__contact__util-numero {
+        font-weight: 700;
+        color: #369D53; }
     .footer__contact__nav {
       width: 20%;
       height: 100%;
@@ -236,7 +241,56 @@ body {
     .footer__contact__paragh {
       width: 50%;
       height: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-top: 6rem; }
+      .footer__contact__paragh__date {
+        color: #7F7F7F; }
+
+a {
+  text-decoration: none;
+  color: #7F7F7F;
+  margin: 0.5rem;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 800; }
+
+nav {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url(/dist/Mergedbar.png);
+  direction: rtl;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+a:hover {
+  color: #1078AD; }
+
+.menu {
+  margin-left: 30px; }
+  .menu__logo {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.4em;
+    font-weight: 600; }
+
+.logo {
+  font-size: 1.4em;
+  font-weight: 600; }
+
+/* --------- Extra ------------ */
+.extra {
+  margin-right: 30px; }
+
+.extra > a {
+  border: 2px solid #cbc;
+  border-radius: 20px; }
+
+.translate > a {
+  border-left: 1px solid #cbc;
+  line-height: 36px; }
 
 .protection {
   width: 100%;
@@ -263,3 +317,38 @@ body {
       .protection__container__conseil:hover {
         background-color: #F4CF1B;
         color: #1078AD; }
+
+.infos {
+  width: 100%;
+  height: auto;
+  background-color: #96C5DC;
+  display: flex;
+  justify-content: space-around;
+  text-align: center; }
+  .infos__text {
+    background-color: red;
+    width: 50%; }
+    .infos__text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #1078AD; }
+    .infos__text p {
+      color: #1078AD;
+      font-size: 1.5rem;
+      font-weight: 500; }
+  .infos__buttons {
+    width: 50%;
+    background-color: green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .infos__buttons button {
+      margin-top: 9%;
+      background-color: #1078AD;
+      width: 9rem;
+      height: 3rem;
+      border: transparent;
+      border-radius: 0.5rem;
+      font-size: 0.8rem;
+      color: #fff;
+      font-weight: 500; }
