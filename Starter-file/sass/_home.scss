@@ -86,9 +86,11 @@ font-weight: 500;
     &__img{
           width: 50%;
         height: auto;
-        background-image: url(/dist/Assets/png/Group_80.png);
-        background-size: cover;
-        background-repeat: no-repeat;
+        & img{
+            width: 100%;
+            height: 100%;
+
+        }
 
     }
 }
