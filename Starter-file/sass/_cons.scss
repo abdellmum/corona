@@ -1,0 +1,36 @@
+
+   .protection{
+     width: 100%;
+     color:$color-blue; 
+     text-align: center;
+   h1{
+        color:$color-blue;
+       font-size:2rem ;
+       font-weight: 600;
+       padding: 2rem;
+    
+   }
+&__container {
+    width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+h2 {
+font-size:1rem ;
+    padding: 1rem;
+  font-weight: 600;
+}
+&__conseil {
+    width: 30%;
+  max-width: 25em;
+  margin-bottom: 2em;
+  &__img{    
+  }
+&:hover{
+background-color:$color-yellow;
+color:$color-blue;
+
+}
+}
+}
+}
