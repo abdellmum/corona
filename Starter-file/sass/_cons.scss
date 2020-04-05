@@ -34,3 +34,45 @@ color:$color-blue;
 }
 }
 }
+//  section infos css
+.infos{
+  width: 100%;
+  height: auto;
+  background-color: $color-ciel;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  &__text{
+    background-color: red;
+    width: 50%;
+  & h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color:$color-blue;
+  }
+  & p{
+    color:$color-blue;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+}
+  &__buttons{
+    width: 50%;
+    background-color: green;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    & button{
+      margin-top: 9%;
+      background-color: $color-blue;
+      width: 9rem;height: 3rem;
+      border: transparent;
+      border-radius:0.5rem;
+      font-size: 0.8rem;
+      color: $color-font-white;
+      font-weight: 500;
+    }
+  }
+  
+}
