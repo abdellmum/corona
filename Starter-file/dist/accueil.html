@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
@@ -19,40 +18,29 @@
 </head>
 
 <body>
-    <!-- header section start -->
-    <div class="">
-        <nav class="navbar  sticky-top navbar-expand-lg navbar-light bg-light">
-            <a href="#"></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24"
-                height="24"> </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="#">Acueil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="cons.html">Conseils</a>
-                    </li>
-
-                </ul>
-            </div>
-
-            <a class="navbar-brand" href="#">
-                <img src="Assets/png/logocorona.png" width="30" height="30" alt="">
+    <nav>
+        <div class="menu">
+            <a href="#">العربية</a>
             </a>
-        </nav>
-    </div>
+            <a href="accueil.html">accueil</a>
+            <a href="cons.html">conseil</a>
+        </div>
+        <div class="extra">
+            <div class="translate">
+                <img class="menu__logo" src="Assets/png/virus.png" width="70px" height="70px" alt="">
+
+                <!-- <a href="#">Francais</a> -->
+
+            </div>
+        </div>
+        </div>
+    </nav>
     <!-- section news start -->
     <div class="news">
         <h2>LA DERNIERE INFOS MEDICALE</h2>
-        <P class="news__paragh">La prise d'anti-inflammatoires (ibuprofène, cortisone ...) pourrait être un facteur
-            d'aggravation de l’infection. En cas
-            de fièvre, prenez du paracétamol.<br>N'arrêtez pas votre traitement ! Consultez votre médecin ou votre
-            pharmacien.</P>
+        <div class="news__paragh">
+        <P>La prise d'anti-inflammatoires (ibuprofène, cortisone) pourrait être un fact d'aggravation de l’infection. de fièvre, prenez du paracétamol.N'arrêtez pas votre traitement ! Consultez votre médecin ou votre pharmacien.</P>
+    </div>
     </div>
     <!-- section news end -->
     <div class="hero">
@@ -125,15 +113,15 @@
 
             </div>
         </div>
-<div class="recomendation__test">
-        <div class="help__test">
-            <h2>Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des
-                symptômes ? </h2>
-            <img src="Assets/png/emojii.png" alt="">
+        <div class="recomendation__test">
+            <div class="help__test">
+                <h2>Vous pensez avoir été exposé au Coronavirus COVID-19 et vous avez des
+                    symptômes ? </h2>
+                <img src="Assets/png/emojii.png" alt="">
 
-            <button class="hero__text__button">Démarrer le test</button>
+                <button class="hero__text__button">Démarrer le test</button>
 
-        </div>
+            </div>
         </div>
     </div>
 
@@ -146,33 +134,36 @@
         </div>
         <div class="footer__contact">
             <div class="footer__contact__nav">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a href="#"></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24" height="24"> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
+
+                <div class="vertical-menu">
+                    <a href="#"></a> <img src="https://demo.neontheme.com/assets/images/flags/flag-fr.png" width="24"
+                        height="24"> </a>
+                    <a href="accueil.html" class="active">accueil</a>
+                    <a href="cons.html">conseil</a>
+                </div>
             </div>
             <div class="footer__contact__util">
                 <h2>contacts utils</h2>
-                <p>Chiffre economique"alo epédile vigilance</p>
-                <p>080 100 47 47</p>
-                <p>aide médicale urgente</p>
-                <p>141</p>
+                <p class="footer__contact__util-paragh">Chiffre economique"alo epédile vigilance"</p>
+                <p class="footer__contact__util-numero">080 100 47 47</p>
+                <p class="footer__contact__util-paragh">aide médicale urgente</p>
+                <p class="footer__contact__util-numero">141</p>
+
             </div>
             <div class="footer__contact__paragh">
-                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa magni sapiente quia reiciendis veritatis, impedit nemo incidunt laudantium nostrum temporibus enim unde quos dicta.</P>
+                <P class="footer__contact__paragh__date">Algorithme d'orientation mis a jour sur les recomendations en
+                    vigueur.</P>
 
+                <P class="footer__contact__paragh__date">au 22/03/2020 a 16h14.Ce site d'information n'est pas un
+                    medicale,</p>
+                <P class="footer__contact__paragh__date">il ne delivre pas d'avis medical.Projet solidaire , financé par
+                    l'Alliance</p>
+                <P class="footer__contact__paragh__date">Digitale contre le COVID-19:@maladieCOVID19</p>
             </div>
         </div>
 
     </div>
-<!-- footer section end -->
+    <!-- footer section end -->
 
 
 
