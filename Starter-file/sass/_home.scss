@@ -391,9 +391,35 @@ a:hover{
 
 
 // <============//media  // query=======>//
-@media (min-width:500px)and(max-width:1000px){
+@media(max-width:1000px){
     .hero{
-        background-color: rgb(58, 25, 206);
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: stretch;
+        
+     &__text{
+         width: 100%;
+         & h2{
+             font-size: 1.4rem;
+             font-weight: 600;
+         }
+         & p{
+             font-size: 1.2rem;
+         }
+        
+         &__button{
+             width: 50%;
+             font-size: medium;
+             height: 2rem;
+
+         }
+
+     }
+}
+.news{
+   
+    & h2{
+        color: ;
+    }
+}
 }
