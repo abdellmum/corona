@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixins";
-@import"m-querry";
+
 
 body{
     width: 100%;
@@ -32,7 +32,6 @@ font-weight: 500;
     }
 }
 .hero{
-    
     direction: rtl;
     width: 90%;
     height: auto;
@@ -313,24 +312,6 @@ padding-top: 3rem;
     }
     }
 }
-
-
-
-
-
-
-
-           
-
-
-
-
-
-
-
-
-
-
 a {
     text-decoration: none;
     color:$color-font;
@@ -391,35 +372,17 @@ a:hover{
 
 
 // <============//media  // query=======>//
-@media(max-width:1000px){
-    .hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: stretch;
-        
-     &__text{
-         width: 100%;
-         & h2{
-             font-size: 1.4rem;
-             font-weight: 600;
-         }
-         & p{
-             font-size: 1.2rem;
-         }
-        
-         &__button{
-             width: 50%;
-             font-size: medium;
-             height: 2rem;
+// section news
+@media(min-device-width: 500PX) 
+ {
+      .hero{
+          background-color:green;
+          display: block;
+          color:rgb(204, 52, 52);
+          &__text{
+              color:red;
+          }
 
-         }
+      }
 
-     }
-}
-.news{
-   
-    & h2{
-        color: ;
-    }
-}
 }
