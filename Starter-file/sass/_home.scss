@@ -373,7 +373,7 @@ a:hover{
 
 // <============//media  // query=======>//
 // section news
-@media(min-device-width: 500PX) 
+@media (min-width:400px)and(max-width: 768px) 
  {
       .hero{
           background-color:green;
